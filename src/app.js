@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import { withState, addStore } from 'react-sse'
+import { withState } from 'react-sse'
 import Counter from './components/Counter'
 // init stores
 import './stores'
@@ -15,7 +15,7 @@ class App extends Component {
     }
 
     return (
-      <main style={{ textAlign: 'center' }}>
+      <main style={{ textAlign: 'center' }}>
         <h1>Welcome to React BP</h1>
         <Counter>{ counterOpts }</Counter>
       </main>
